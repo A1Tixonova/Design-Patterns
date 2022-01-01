@@ -75,6 +75,7 @@ class ConcreteProduct2 implements Product {
  * базовый интерфейс. Пока клиент продолжает работать с создателем через базовый
  * интерфейс, вы можете передать ему любой подкласс создателя.
  */
+
 function clientCode(creator: Creator) {
   // ...
   console.log(
