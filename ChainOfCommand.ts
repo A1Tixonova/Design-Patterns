@@ -68,7 +68,7 @@ class DogHandler extends AbstractHandler {
  * большинстве случаев клиенту даже неизвестно, что этот обработчик является
  * частью цепочки.
  */
-function clientCode(handler: Handler) {
+function clientCode3(handler: Handler) {
   const foods = ['Nut', 'Banana', 'Cup of coffee'];
 
   for (const food of foods) {
@@ -97,8 +97,8 @@ monkey.setNext(squirrel).setNext(dog);
  * только первому в цепочке.
  */
 console.log('Chain: Monkey > Squirrel > Dog\n');
-clientCode(monkey);
+clientCode3(monkey);
 console.log('');
 
 console.log('Subchain: Squirrel > Dog\n');
-clientCode(squirrel);
+clientCode3(squirrel);
